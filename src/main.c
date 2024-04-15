@@ -4,9 +4,7 @@
 
 void _start() {
     char buf[1024];
-    int n = read(0, buf, 1024);
-    puts("You entered: ");
-    buf[n] = '\0';
+    scanf("%s", buf);
     printf("%s%d\n", buf, 20);
     exit(0);
 }
