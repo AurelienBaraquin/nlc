@@ -1,3 +1,5 @@
+#pragma once
+
 #ifndef __va_list
     #if defined(__GNUC__) && __GNUC__ >= 3
         #define __va_list __builtin_va_list
