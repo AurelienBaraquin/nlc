@@ -1,4 +1,4 @@
-CFLAGS = -I./include -nostdlib -W
+CFLAGS = -I./include -fno-stack-protector -nostdlib -W
 
 SRC = $(shell find src -name "*.c")
 

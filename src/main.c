@@ -7,6 +7,6 @@ void _start() {
     int n = read(0, buf, 1024);
     puts("You entered: ");
     buf[n] = '\0';
-    puts(buf);
+    printf("%s\n", buf);
     exit(0);
 }
