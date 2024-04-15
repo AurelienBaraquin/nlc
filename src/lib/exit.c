@@ -1,4 +1,4 @@
-#define SYS_EXIT 60
+#include "nlclib.h"
 
 void exit(int status) {
     asm volatile (
