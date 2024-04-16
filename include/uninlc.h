@@ -1,6 +1,6 @@
 #pragma once
 
-typedef unsigned int size_t;
+typedef long unsigned int size_t;
 
 #ifndef SYS_READ
     #define SYS_READ 0
