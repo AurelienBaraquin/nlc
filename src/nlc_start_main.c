@@ -1,5 +1,3 @@
-#include "sys/types.h"
-
 extern void exit(int status);
 extern void __nlc_csu_init(void);
 extern void __nlc_csu_fini(void);
