@@ -13,5 +13,7 @@ void exit(int status) {
         :
         : "a"(SYS_EXIT), "D"(status)
     );
+
+    while (1);
 #endif
 }
