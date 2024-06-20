@@ -13,11 +13,9 @@ TARGET = main
 $(TARGET): $(OBJ)
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJ)
 
-# Règle pour compiler les fichiers .c en fichiers .o
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-# Règle pour compiler les fichiers .s en fichiers .o
 %.o: %.s
 	$(AS) -c $< -o $@
 
