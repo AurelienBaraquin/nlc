@@ -4,10 +4,9 @@
 #include "string.h"
 
 int main(int argc, char **argv) {
-    if (argc != 2)
-        return 1;
+    void *ptr = sbrk(1);
 
-    char *str = argv[1];
-    puts(str);
-    return 0;
+    strcpy(ptr, "Hello, World!\n");
+
+    puts(ptr);
 }
