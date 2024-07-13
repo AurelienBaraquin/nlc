@@ -1,4 +1,4 @@
-CFLAGS = -I./include -fno-stack-protector -nostdlib -nostartfiles -W -g3
+CFLAGS = -I./include -nostdlib -nostartfiles -W -g3 -no-pie
 
 SRC_C = $(shell find src -name "*.c")
 SRC_S = $(shell find src -name "*.s")

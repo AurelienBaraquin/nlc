@@ -8,3 +8,4 @@ typedef long unsigned int size_t;
 
 void exit(int status);
 
+void *malloc(size_t size);
