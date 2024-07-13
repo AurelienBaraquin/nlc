@@ -46,3 +46,8 @@ void *malloc(size_t size) {
 
     return (void *)(new_block + 1);
 }
+
+void free(void *ptr) {
+    block_t *block = (block_t *)ptr - 1;
+    block->free = 1;
+}
