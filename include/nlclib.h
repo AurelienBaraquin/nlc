@@ -8,5 +8,7 @@ typedef long unsigned int size_t;
 
 void exit(int status);
 
+int atoi(const char *str);
+
 void *malloc(size_t size);
 void free(void *ptr);
