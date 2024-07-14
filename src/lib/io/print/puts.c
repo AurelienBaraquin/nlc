@@ -1,10 +1,5 @@
 #include "nlcio.h"
 #include "uninlc.h"
-#include "nlcarg.h"
-
-int putchar(int c) {
-    return write(1, &c, 1);
-}
 
 int puts(const char *s) {
     if (s == NULL)

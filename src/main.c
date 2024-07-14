@@ -3,14 +3,16 @@
 #include "nlcio.h"
 #include "string.h"
 
-int main(int argc, char **argv) {
-    int a = atoi(argv[1]);
+void putnbr(int n) {
+    if (n < 0) {
+        putchar('-');
+        n = -n;
+    }
+    if (n >= 10)
+        putnbr(n / 10);
+    putchar(n % 10 + '0');
+}
 
-    char *s = malloc(a);
-    strcpy(s, "Hello world!");
-    puts(s);
-    free(s);
-    char *s2 = malloc(a);
-    strcpy(s2, "Hello world!");
-    puts(s2);
+int main(int argc, char **argv) {
+    return 0;
 }
