@@ -18,30 +18,39 @@ void *malloc(size_t size) {
     if (size == 0)
         return NULL;
 
+    block_t *current = head;
+
+    // Première allocation
     if (head == NULL) {
-        head = sbrk(sizeof(block_t));
+        head = sbrk(sizeof(block_t) + size);
         if (head == (void *)-1)
             return NULL;
-        head->size = 0;
+
+        head->size = size;
         head->free = 0;
         head->next = NULL;
+
+        return (void *)(head + 1);
     }
 
-    block_t *current = head;
-    while (current->next != NULL) {
+    while (current != NULL) {
         if (current->free && current->size >= size) {
             current->free = 0;
             return (void *)(current + 1);
         }
+        if (current->next == NULL)
+            break;
         current = current->next;
     }
 
     block_t *new_block = sbrk(sizeof(block_t) + size);
     if (new_block == (void *)-1)
         return NULL;
+
     new_block->size = size;
     new_block->free = 0;
     new_block->next = NULL;
+
     current->next = new_block;
 
     return (void *)(new_block + 1);
