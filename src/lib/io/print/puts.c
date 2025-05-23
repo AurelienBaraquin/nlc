@@ -1,5 +1,5 @@
-#include "nlcio.h"
-#include "uninlc.h"
+#include <nlc/io.h>
+#include <nlc/uni.h>
 
 int puts(const char *s) {
     if (s == NULL)

@@ -1,4 +1,4 @@
-#include "uninlc.h"
+#include <nlc/uni.h>
 
 int brk(void *addr) {
 #ifdef _WIN32

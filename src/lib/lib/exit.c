@@ -1,4 +1,4 @@
-#include "nlclib.h"
+#include <nlc/lib.h>
 
 #ifdef _WIN32
     #include <Windows.h>

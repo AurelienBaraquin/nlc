@@ -1,4 +1,4 @@
-#include "uninlc.h"
+#include <nlc/uni.h>
 
 #include <stdint.h>
 #include <stddef.h>

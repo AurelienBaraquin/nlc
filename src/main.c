@@ -1,7 +1,7 @@
-#include "nlclib.h"
-#include "uninlc.h"
-#include "nlcio.h"
-#include "string.h"
+#include <nlc/lib.h>
+#include <nlc/uni.h>
+#include <nlc/io.h>
+#include <nlc/string.h>
 
 int main(int argc, char **argv) {
     puts("Hello, world!");

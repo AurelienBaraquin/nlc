@@ -1,4 +1,4 @@
-#include "uninlc.h"
+#include <nlc/uni.h>
 
 
 #ifdef _WIN32

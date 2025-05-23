@@ -1,4 +1,4 @@
-#include "nlcio.h"
+#include <nlc/io.h>
 
 void putnbr(int n) {
     if (n < 0) {

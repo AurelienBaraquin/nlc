@@ -1,6 +1,6 @@
-#include "nlcio.h"
-#include "uninlc.h"
-#include "nlcarg.h"
+#include <nlc/io.h>
+#include <nlc/uni.h>
+#include <nlc/arg.h>
 
 int getchar() {
     char c;
