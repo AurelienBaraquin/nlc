@@ -5,6 +5,7 @@
 // print
 int putchar(int c);
 int puts(const char *s);
+int putnbr(int n);
 int printf(const char *format, ...);
 
 // scan
